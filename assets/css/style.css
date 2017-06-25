@@ -1,0 +1,37 @@
+h3{
+	text-decoration: underline;
+}
+
+h2{
+	color: green;
+}
+
+h1
+{
+	text-align: center;
+}
+
+.gems
+{
+	height: 200px;
+	width:20%;
+}
+
+/*.flashing{
+	height:100px;
+	width: 15%;
+}*/
+
+.losses{
+	margin-bottom: 50px;
+}
+
+#randomNum,
+#totalSum
+{
+	font-size: 5em;
+}
+
+#totalWins{
+	font-size: 3em;
+}
