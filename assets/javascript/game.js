@@ -9,8 +9,10 @@ $(document).ready(function(){
 			var randomNumber = Math.floor(Math.random() * 120) + 20;
 			$("#randomNum").html(randomNumber);
 
-			counter = 0;
+			var counter = 0;
 			$("#totalSum").html(counter);
+
+			var globalcounter = 0;
 			// }
 
 			// startFunction();
@@ -46,6 +48,8 @@ $(document).ready(function(){
     		counter += valueA;
 			$("#totalSum").html(counter);
 			});
+
+			
 			
 
 
@@ -73,9 +77,16 @@ $(document).ready(function(){
 
 			});
 
-			// counter; 
+			// i realize that my counter has value within the function, but I need the global counter 
+			// to be updated as well. I think I need to reiew scope and how to call on an element that is within 
+			// a function
+
+			// I will work on this ASAP. I also want to work on condensing my code.
+
 
 			
+
+			var totalValue = parseInt(counter);
 
 
 			function numChecker (num1, num2){
@@ -91,7 +102,7 @@ $(document).ready(function(){
 
 			// startFunction();
 			createRanNumbers();
-			numChecker(counter, randomNumber);	
+			numChecker(totalValue, randomNumber);	
 
 
 })
