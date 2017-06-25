@@ -83,7 +83,7 @@ $(document).ready(function(){
 					alert("YOU WIN!!");
 				} 
 
-				if (num1 <= num2){
+				if (num1 >= num2){
 					alert("You went too high");
 				}
 			};
